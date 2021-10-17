@@ -15,12 +15,18 @@
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../js/nc.js"></script>
-	<script type="text/javascript" src="../js/youtube.js"></script>
+	<script type="text/javascript" src="js/player.js"></script>
+	<script type="text/javascript" src="js/nc.js"></script>
+	<script>
+		window.ondragstart = function() { return false; }
+	</script>
+	<!-- <script type="text/javascript" src="js/youtube.js">a</script> -->
 
 </head>
-<body>
+<body onload="logic()">
 
+	<div id="data-player"></div>
+	
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
@@ -35,8 +41,9 @@
 				
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"><a href="javascript:void(0);">» Inicio «</a></span>
-					<span class="icon-bar"><a href="./galeria/">Galería</a></span>
+					<span class="icon-bar"><a href="../">» Inicio «</a></span>
+					<span class="icon-bar"><a href="./discord/">Discord</a></span>
+					<span class="icon-bar"><a href="javascript:void(0);">Galería</a></span>
 				</button>
 				
 				<div class="navbar-brand">
@@ -56,8 +63,9 @@
 			
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="nav-item"><a class="nav-link" href="../">Inicio</a></li>
-					<li class="nav-item active"><a class="nav-link" href="javascript:void(0);">» Galería «</a></li>
+					<li class="nav-item"><a class="nav-link" href="../">» Inicio «</a></li>
+					<li class="nav-item"><a class="nav-link" href="./discord/">Discord</a></li>
+					<li class="nav-item active"><a class="nav-link" href="javascript:void(0);">Galería</a></li>
 				</ul>
 			</div>
 		</div>
@@ -181,27 +189,19 @@
 				</div>-->
 
 				<div class="well well-sm">
-					<h4>Adictiva FM.</h4>
-					<script type="text/javascript">
-						var cstrFreePlayerUid = 551231;
-						var cstrFreePlayerTheme = "yellow";
-						var cstrFreePlayerColor = "F16620";
-					</script>
-					<script type="text/javascript" src="//corscdn.caster.fm/freeplayer/FreePlanPlayerEmbed.js"></script>
-					<!--   DO NOT REMOVE THE LINKS BELOW, THEY  WILL BE HIDDEN (AND WILL HELP US A LOT)   -->
-					<a id="cstrFreePlayerBL1" href="//www.caster.fm/">Free Shoutcast Hosting</a>
-					<a id="cstrFreePlayerBL2" href="//www.caster.fm/">Radio Stream Hosting</a>
-					<div id="cstrFreePlayerDiv"></div>
-				</div>
-
-				<div class="well well-sm">
-					<h4>Únete a nuestra comunidad de discord.</h4>
+					<img src="art/static/logos-antoher-services/discord-wordmark-1.svg" height="50" width="100%" style="padding-top: 10px;" />
+					<hr>
+					<b><p>¡Unete a nuestra comunidad!</p></b>
+					<hr>
 					<iframe src="https://discord.com/widget?id=892996759117250581&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 				</div>
 
 				<div class="well well-sm">
-					<h4>Twitter modulo.</h4>
-					<p>Seas bienvenid@ a mi nueva página web!</p>
+					<img src="art/static/logos-antoher-services/twitter-6.svg" height="50" width="100%" style="padding-top: 10px;" />
+					<hr>
+					<b><p>¡Síguenos en Twitter!</p></b>
+					<hr>
+					<a class="twitter-timeline" href="https://twitter.com/AdictivaFMMX?ref_src=twsrc%5Etfw" target="_blank">Tweets by AdictivaFMMX</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 				
 			</div>
