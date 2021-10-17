@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Inicio de la pagina web." />
+	<meta name="author" content="Arcvalx,Killellor,Paímon" />
+	
+	<title>Adictiva FM - Inicio de página.</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/design.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/player.js"></script>
+	<script type="text/javascript" src="../js/nc.js"></script>
+	<script>
+		window.ondragstart = function() { return false; }
+	</script>
+	<!-- <script type="text/javascript" src="js/youtube.js"></script> -->
+
+</head>
+<body onload="logic()">
+
+	<div id="data-player"></div>
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+
+				<div class="navbar-brand">
+					<img src="../art/logo/logo.png" height="60" />
+				</div>
+
+				<!--
+				
+				EL CODIGO SIRVE PERO, CUANDO SE HACE A MENOS DE 720 PX LOS HYPERLINKS NO SE ESCONDEN (REVISAR)
+				
+				-->
+				
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"><a href="../">Inicio</a></span>
+					<span class="icon-bar"><a href="javascript:void(0);">» Discord «</a></span>
+				</button>
+				
+				<div class="navbar-brand">
+					<div id="pp" class="glyphicon glyphicon-play"></div>
+				</div>
+				
+				<div class="navbar-brand">
+					<div id="mute" class="glyphicon glyphicon-volume-up"></div>
+				</div>
+				
+				<div class="navbar-brand">
+					<!-- <div id="loader"></div> -->
+					<input id="vol-control" min="0" max="100" type="range" value="5" />
+				</div>
+				
+			</div>
+			
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="../">Inicio</a></li>
+					<li class="nav-item active"><a class="nav-link" href="javascript:void(0);">» Discord «</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+	
+	<div class="container">
+	
+		<hr>
+		
+		<div class="row">
+		
+			<div class="col-md-auto">
+			
+				<div class="well">
+				
+					<img src="../art/logo/logo.png" height="150" />
+					
+					
+					<hr>
+					<h2>¡Adictiva FM agradece tu preferencia!</h2>
+					<hr>
+					
+					
+					<b><p style="font-size: 24px;">¡A continuación tendrás el enlace para invitar a nuestro bot a tu servidor de discord!</p></b>
+					<b><p style="font-size: 24px;">__________________________________________</p></b>
+					<b><p>Haz clic para invitar nuestro bot a tu server.</b></p>
+					<a href="https://discord.com/oauth2/authorize?client_id=890315204083204117&scope=bot&permissions=8" target="_blank"><img src="../art/static/logos-antoher-services/discord-wordmark-1.svg" height="75" width="50%" style="padding-top: 10px;" /></a>
+					<b><p style="font-size: 24px;">__________________________________________</p></b>
+					
+					<hr>
+					
+				</div>
+			
+				<div class="well">
+				
+					<h2>¡Algunas cosas que tienes que saber!</h2>
+					<hr>
+					<b><p style="font-size: 24px;">Nuestro bot solo tiene 4 comandos, los cuales te decimos a continuación:</p></b>
+					<b><p>--conectar    || Es para conectar a nuestro bot al canal donde quieres que transmita.</b></p>
+					<b><p>--desconectar || Es para desconectar nuestro bot del canal.</b></p>
+					<b><p>--vol [param] || Es para establecer el volumen de nuestro bot en el canal.</b></p>
+					<b><p>--invitar     || Invita al bot a tu servidor de discord.</b></p>
+					<hr>
+					<b><p style="font-size: 24px;">¡Necesitas administrar!</p></b>
+					<hr>
+					<b><p>Solo los administradores del servidor globales pueden ejecutar los comandos "--conectar", "--desconectar" y "--vol"</b></p>
+					
+				</div>
+				
+				<div class="well">
+				
+					<h2>¡Información adicional!</h2>
+					<hr>
+					<b><p style="font-size: 24px;">¡Nuestro bot requiere mantenimiento!</p></b>
+					<b><p>Como cualquier cosa, nuestro bot require de mantenimientos, por lo cual es posible que lo desconectemos el día 7 y 15 de cada mes por un intervalo que va de 30 minutos a 1 hora (o más).</b></p>
+					<hr>
+					<b><p style="font-size: 24px;">Bugs...</p></b>
+					<b><p>¡Aplicaciones limpias! - Nos encargaremos de eliminar cualquier error en el bot, por lo que si llegamos a desconectar sin motivo o razón es por que estaremos trabajando en una solución.</b></p>
+					
+				</div>
+				
+			</div>
+
+		</div>
+		
+		<hr>
+		
+		<footer>
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Copyright &copy; Adictiva FM | adictivafm.github.io 2021 | Adictiva FM no está afiliada, respaldada, patrocinada o aprobada específicamente por <a href="https://www.sulake.com/" target="_blank">Sulake Corporation Oy</a> o sus afiliados. Adictiva FM puede usar las marcas comerciales y otras propiedades intelectuales de <a href="https://habbo.es/" target="_blank">habbo.es</a>, lo cual está permitido bajo la Política del sitio de web fans de <a href="https://habbo.es/" target="_blank">habbo.es</a>.</p>
+					<p>Powered by <a href="https://github.com" target="_blank">GitHub</a>.</p>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+		
+</body>
+</html>

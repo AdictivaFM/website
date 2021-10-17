@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+	font-family: Quicksand, sans-serif;
+	font-size: 16;
+}
+
+body {
+	padding-top: 70px;
+	background: url('../art/backgrounds/background_2.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: Quicksand, sans-serif;
+	font-size: 16;
+}
+
+iframe {
+	display: block;
+	margin: none;
+	padding: none;
+	border: none;
+	font-family: Quicksand, sans-serif;
+	font-size: 16;
+}
+
+footer {
+	margin: 50px 0;
+	font-family: Quicksand, sans-serif;
+	font-size: 16;
+}
+
+nav {
+	display: inline;
+	font-family: Quicksand, sans-serif;
+	font-size: 16;
+}
+
+nav li {
+	display: inline-block;
+	border-radius: 2px;
+	font-family: Quicksand, sans-serif;
+	font-size: 16;
+}
+
+.banner-container {
+	padding-top: 1%;
+	padding-bottom: 4%;
+	font-family: Quicksand, sans-serif;
+	font-size: 16;
+}
+
+.well {
+	background: rgba(255, 255, 255, 0.8);
+	border: 1px solid black;
+	text-align: center;
+	font-family: Quicksand, sans-serif;
+	font-size: 16;
+}
+
+.col-lg-12 {
+	color: white;
+	font-family: Quicksand, sans-serif;
+	font-size: 16;
+}
+
+#carouselID02 {
+	text-align: center;
+	font-family: Quicksand, sans-serif;
+	font-size: 16;
+}
